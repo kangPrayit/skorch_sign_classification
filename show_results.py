@@ -44,6 +44,7 @@ def show_metrics():
     metrics = dict()
     aggregate_metrics(experiment_dir, metrics)
     metrics = dict(sorted(metrics.items(), key=lambda x: x[0], reverse=True))
+    metrics = dict(sorted(metrics.items(), key = lambda x: (x[1]["accuracy"]), reverse=True))
     table = metrics_to_table(metrics)
 
     # Display the table to terminal

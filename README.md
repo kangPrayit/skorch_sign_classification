@@ -22,8 +22,9 @@ python train.py --data_dir data/64x64_SIGNS --model_dir experiments/base_model
 It will instantiate a model and train it on the training set following the hyperparameters specified in `params.json`. It will also evaluate some metrics on the validation set.
 
 ## Results
-|                           |   accuracy |   precision |   recall |       f1 |
-|:--------------------------|-----------:|------------:|---------:|---------:|
-| ./experiments/jos_model   |   0.972222 |    0.97071  | 0.970979 | 0.970659 |
-| ./experiments/embuh_model |   0.925926 |    0.923112 | 0.925957 | 0.923412 |
-| ./experiments/base_model  |   0.87037  |    0.865206 | 0.874003 | 0.865857 |
+|                          |   accuracy |   precision |   recall |       f1 |
+|:-------------------------|-----------:|------------:|---------:|---------:|
+| ./experiments/epochs_200 |   0.976852 |    0.975096 | 0.975352 | 0.975157 |
+| ./experiments/epochs_100 |   0.972222 |    0.97071  | 0.97048  | 0.970535 |
+| ./experiments/epochs_50  |   0.921296 |    0.91821  | 0.921606 | 0.918521 |
+| ./experiments/base_model |   0.87037  |    0.865206 | 0.874003 | 0.865857 |
